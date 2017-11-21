@@ -1,0 +1,35 @@
+<html>
+<head>
+<script src="gameoflife.js"></script>
+<link rel="stylesheet" type="text/css" href="gameoflife.css">
+</head>
+<body>
+<div style="display:flex">
+<div id="gamearea">
+<table id="celltable">
+</table>
+<div>
+<table id="bartable"><tr>
+<td id="redbar" style="width: 267px"></td>
+<td id="natbar" style="width: 267px"></td>
+<td id="bluebar" style="width: 267px"></td>
+<tr/></table>
+<div id="bottombar">
+<span id="turnspan" class="stat">Turn: UNDEFINED</span>
+<span class="stat" style="color: #ff0000">Red Cells: <span id="redcount">000</span></span>
+<span class="stat" style="color: #00ff00">Natural Cells: <span id="natcount">000</span></span>
+<span class="stat" style="color: #0000ff">Blue Cells: <span id="bluecount">000</span></span>
+<span class="stat" style="color: #000000">All Cells: <span id="allcount">000</span></span>
+</div>
+</div>
+</div>
+<div id="gamelogcontainer">
+<div id="gamelog">
+Game Log: <br/>
+</div>
+<button id="actionbutton" type="button">Kill!</button><br/>
+</div>
+</div>
+<script>setupFunction();</script>
+</body>
+</html>

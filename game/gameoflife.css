@@ -1,0 +1,114 @@
+.bluecell {
+	background-color: #0000ff;
+}
+
+.bluecell:hover {
+	background-color: #0000aa;
+}
+
+.redcell {
+	background-color: #ff0000;
+}
+
+.redcell:hover {
+	background-color: #aa0000;
+}
+
+.naturalcell {
+	background-color: #00aa00;
+}
+
+.naturalcell:hover {
+	background-color: #008800;
+}
+
+.deadcell {
+	background-color: #888888;
+}
+
+.deadcell:hover {
+	background-color: #666666;
+}
+
+.selected {
+	animation: fadecolor 2s 1;
+	animation-iteration-count: infinite;
+}
+
+@keyframes fadecolor {
+	50% { opacity: 0.5; }
+}
+
+.toburn {
+	animation: fadeburn 2s 1;
+	animation-iteration-count: infinite;
+}
+
+@keyframes fadeburn {
+	50% { background-color: #f49242; }
+}
+
+.hole {
+	background-color: black;
+	margin: 10px;
+	width: 32px;
+	height: 32px;
+}
+
+.cell {
+	margin: 10px;
+	width: 32px;
+	height: 32px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 32px;
+}
+
+.stat {
+	display:table-cell;
+	text-align:center;
+}
+
+#celltable {
+	background-color: black;
+	margin: 10px;
+	border: 2px solid #006600;
+}
+
+#gamelog {
+	overflow-y: scroll;
+	width: 160px;
+	height: 864px;
+	margin-top: 20px
+}
+
+#bottombar {
+	display: table;
+	width: 900;
+	table-layout: fixed;
+}
+
+#actionbutton {
+	width: 160px;
+	margin-top: 20px;
+	background-color: #999999;
+}
+
+#redbar {
+	background-color: #ff0000;
+	height: 2px;
+}
+
+#bluebar {
+	background-color: #0000ff;
+	height: 2px;
+}
+
+#natbar {
+	background-color: #00ff00;
+	height: 2px;
+}
+
+#bartable {
+	margin-left: 40px;
+}
